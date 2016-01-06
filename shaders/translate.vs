@@ -1,7 +1,6 @@
 #version 130
 
 in vec3 position;
-
 out vec3 frag_color;
 
 mat4 projection(
@@ -28,9 +27,33 @@ mat4 translate(float x, float y, float z) {
            );
 }
 
-void main() {
-      gl_Position = projection(radians(45.0), 4.0/3.0, -0.1, -1000.0)
-                      * translate(0.0, 0.0, -5.0)
-                      * vec4(position, 1.0f);
-      frag_color = vec3(1.0, 1.0, 1.0); // white
+mat4 rotate_x(float theta)
+{
+       return mat4(
+        vec4(1.0, 0.0, 0.0, 0.0),
+        vec4(0.0, cos(theta), sin(theta), 0.0),
+        vec4(0.0, -sin(theta), cos(theta), 0.0),
+        vec4(0.0, 0.0, 0.0, 1.0)
+    );
 }
+
+mat4 rotate_y(float theta)
+{
+    return mat4(
+        vec4(cos(theta), 0.0, sin(theta), 0.0),
+        vec4(0.0, 1.0, 0.0, 0.0),
+        vec4(-sin(theta), 0.0, cos(theta), 0.0),
+        vec4(0.0, 0.0, 0.0, 1.0)
+    );
+}
+
+void main() {
+      gl_Position = projection(radians(45.0), 16.0/9.0, -0.1, -1000.0)
+      
+                      * translate(0.0, 0.0, -2.0)
+      * rotate_x(radians(45.0))
+      * rotate_y(radians(45.0))
+                      * vec4(position, 1.0f);
+      frag_color = vec3(10.0, 1.0, 1.0); // white
+}
+

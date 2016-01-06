@@ -3,16 +3,38 @@
 CubeAsset::CubeAsset() {
   // model coordinates, origin at centre.
   GLfloat vertex_buffer [] {
-    -0.5, -0.5, -0.5
-    , -0.5,  0.5, -0.5
-    ,  0.5, -0.5, -0.5
-    ,  0.5,  0.5, -0.5
+  -0.5,0.5,0.5,   //0 ftl    
+  -0.5,-0.5,0.5,  //1 fbl
+   0.5,-0.5,0.5,  //2 fbr
+   0.5,0.5,0.5,   //3 ftr
+  -0.5,0.5,-0.5,  //4 btl
+  -0.5,-0.5,-0.5, //5 bbl
+   0.5,-0.5,-0.5, //6 bbr
+   0.5,0.5,-0.5   //7 btr
   };
 
-  element_buffer_length = 6;
+  element_buffer_length = 36;
   GLuint element_buffer []  {
-    0, 1, 2
-    , 1, 3, 2
+  
+ //cube
+  0,1,2, //Front
+  0,3,2,
+
+  3,2,6, //Right side
+  3,7,6,
+
+  0,1,5, //Left side
+  0,4,5,
+
+  4,5,7, //Back
+  4,7,6,
+
+  0,3,4, //Top
+  4,3,7,
+
+  1,2,5, //Bottom
+  2,6,5
+  
   };
 
   // Transfer buffers to the GPU
@@ -23,7 +45,7 @@ CubeAsset::CubeAsset() {
 
   // immediately bind the buffer and transfer the data
   glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_token);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 12, vertex_buffer, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 24, vertex_buffer, GL_STATIC_DRAW);
 
   glGenBuffers(1, &element_buffer_token);
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, element_buffer_token);
