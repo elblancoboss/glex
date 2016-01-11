@@ -1,136 +1,32 @@
-GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
- GameAssetManager.h /usr/include/c++/5.1.1/memory \
- /usr/include/c++/5.1.1/bits/stl_algobase.h \
+Camera.o: Camera.cc /usr/include/stdc-predef.h Camera.h \
+ /usr/include/glm/ext.hpp /usr/include/glm/gtc/bitfield.hpp \
+ /usr/include/glm/detail/setup.hpp /usr/include/c++/5.1.1/cassert \
+ /usr/include/assert.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/c++/5.1.1/cstddef \
  /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++config.h \
- /usr/include/bits/wordsize.h \
  /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/os_defines.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/5.1.1/bits/functexcept.h \
- /usr/include/c++/5.1.1/bits/exception_defines.h \
- /usr/include/c++/5.1.1/bits/cpp_type_traits.h \
- /usr/include/c++/5.1.1/ext/type_traits.h \
- /usr/include/c++/5.1.1/ext/numeric_traits.h \
- /usr/include/c++/5.1.1/bits/stl_pair.h \
- /usr/include/c++/5.1.1/bits/move.h \
- /usr/include/c++/5.1.1/bits/concept_check.h \
- /usr/include/c++/5.1.1/type_traits \
- /usr/include/c++/5.1.1/bits/stl_iterator_base_types.h \
- /usr/include/c++/5.1.1/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/5.1.1/debug/debug.h \
- /usr/include/c++/5.1.1/bits/stl_iterator.h \
- /usr/include/c++/5.1.1/bits/ptr_traits.h \
- /usr/include/c++/5.1.1/bits/predefined_ops.h \
- /usr/include/c++/5.1.1/bits/allocator.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++allocator.h \
- /usr/include/c++/5.1.1/ext/new_allocator.h /usr/include/c++/5.1.1/new \
- /usr/include/c++/5.1.1/exception \
- /usr/include/c++/5.1.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/5.1.1/bits/exception_ptr.h \
- /usr/include/c++/5.1.1/bits/nested_exception.h \
- /usr/include/c++/5.1.1/bits/memoryfwd.h \
- /usr/include/c++/5.1.1/bits/stl_construct.h \
- /usr/include/c++/5.1.1/ext/alloc_traits.h \
- /usr/include/c++/5.1.1/bits/alloc_traits.h \
- /usr/include/c++/5.1.1/bits/stl_uninitialized.h \
- /usr/include/c++/5.1.1/bits/stl_tempbuf.h \
- /usr/include/c++/5.1.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/5.1.1/typeinfo /usr/include/c++/5.1.1/bits/hash_bytes.h \
- /usr/include/c++/5.1.1/iosfwd /usr/include/c++/5.1.1/bits/stringfwd.h \
- /usr/include/c++/5.1.1/bits/postypes.h /usr/include/c++/5.1.1/cwchar \
- /usr/include/wchar.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdarg.h \
- /usr/include/bits/wchar.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/5.1.1/ext/atomicity.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
- /usr/include/sched.h /usr/include/time.h /usr/include/bits/sched.h \
- /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/atomic_word.h \
- /usr/include/c++/5.1.1/ext/concurrence.h \
- /usr/include/c++/5.1.1/bits/stl_function.h \
- /usr/include/c++/5.1.1/backward/binders.h \
- /usr/include/c++/5.1.1/bits/uses_allocator.h \
- /usr/include/c++/5.1.1/functional /usr/include/c++/5.1.1/tuple \
- /usr/include/c++/5.1.1/utility /usr/include/c++/5.1.1/bits/stl_relops.h \
- /usr/include/c++/5.1.1/initializer_list /usr/include/c++/5.1.1/array \
- /usr/include/c++/5.1.1/stdexcept /usr/include/c++/5.1.1/string \
- /usr/include/c++/5.1.1/bits/char_traits.h /usr/include/c++/5.1.1/cstdint \
- /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/c++/5.1.1/bits/localefwd.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++locale.h \
- /usr/include/c++/5.1.1/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/5.1.1/cctype \
- /usr/include/ctype.h /usr/include/c++/5.1.1/bits/ostream_insert.h \
- /usr/include/c++/5.1.1/bits/cxxabi_forced.h \
- /usr/include/c++/5.1.1/bits/range_access.h \
- /usr/include/c++/5.1.1/bits/basic_string.h \
- /usr/include/c++/5.1.1/ext/string_conversions.h \
- /usr/include/c++/5.1.1/cstdlib /usr/include/stdlib.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/sys/types.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/sigset.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/5.1.1/cstdio /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/stdio_lim.h \
- /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
- /usr/include/c++/5.1.1/cerrno /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h \
- /usr/include/c++/5.1.1/bits/functional_hash.h \
- /usr/include/c++/5.1.1/bits/basic_string.tcc \
- /usr/include/c++/5.1.1/bits/unique_ptr.h \
- /usr/include/c++/5.1.1/bits/shared_ptr.h \
- /usr/include/c++/5.1.1/bits/shared_ptr_base.h \
- /usr/include/c++/5.1.1/bits/allocated_ptr.h \
- /usr/include/c++/5.1.1/ext/aligned_buffer.h \
- /usr/include/c++/5.1.1/bits/shared_ptr_atomic.h \
- /usr/include/c++/5.1.1/bits/atomic_base.h \
- /usr/include/c++/5.1.1/backward/auto_ptr.h /usr/include/c++/5.1.1/vector \
- /usr/include/c++/5.1.1/bits/stl_vector.h \
- /usr/include/c++/5.1.1/bits/stl_bvector.h \
- /usr/include/c++/5.1.1/bits/vector.tcc /usr/include/c++/5.1.1/fstream \
- /usr/include/c++/5.1.1/istream /usr/include/c++/5.1.1/ios \
- /usr/include/c++/5.1.1/bits/ios_base.h \
- /usr/include/c++/5.1.1/bits/locale_classes.h \
- /usr/include/c++/5.1.1/bits/locale_classes.tcc \
- /usr/include/c++/5.1.1/system_error \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/error_constants.h \
- /usr/include/c++/5.1.1/streambuf \
- /usr/include/c++/5.1.1/bits/streambuf.tcc \
- /usr/include/c++/5.1.1/bits/basic_ios.h \
- /usr/include/c++/5.1.1/bits/locale_facets.h \
- /usr/include/c++/5.1.1/cwctype /usr/include/wctype.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/5.1.1/bits/streambuf_iterator.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/ctype_inline.h \
- /usr/include/c++/5.1.1/bits/locale_facets.tcc \
- /usr/include/c++/5.1.1/bits/basic_ios.tcc /usr/include/c++/5.1.1/ostream \
- /usr/include/c++/5.1.1/bits/ostream.tcc \
- /usr/include/c++/5.1.1/bits/istream.tcc \
- /usr/include/c++/5.1.1/bits/codecvt.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/5.1.1/bits/fstream.tcc /usr/include/c++/5.1.1/iostream \
- /usr/include/GL/gl.h /usr/include/GL/glext.h /usr/include/inttypes.h \
- common.h GameAsset.h Camera.h /usr/include/glm/ext.hpp \
- /usr/include/glm/gtc/bitfield.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/c++/5.1.1/cassert /usr/include/assert.h \
- /usr/include/c++/5.1.1/cstddef \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/emmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mm_malloc.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/glm/detail/precision.hpp \
- /usr/include/glm/detail/type_int.hpp \
+ /usr/include/glm/detail/type_int.hpp /usr/include/c++/5.1.1/type_traits \
+ /usr/include/c++/5.1.1/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/glm/detail/_vectorize.hpp \
  /usr/include/glm/detail/type_vec1.hpp /usr/include/glm/fwd.hpp \
  /usr/include/glm/detail/type_float.hpp \
@@ -154,7 +50,9 @@ GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
  /usr/include/glm/trigonometric.hpp \
  /usr/include/glm/detail/func_trigonometric.hpp \
  /usr/include/glm/detail/func_trigonometric.inl \
- /usr/include/c++/5.1.1/cmath /usr/include/math.h \
+ /usr/include/c++/5.1.1/cmath \
+ /usr/include/c++/5.1.1/bits/cpp_type_traits.h \
+ /usr/include/c++/5.1.1/ext/type_traits.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
@@ -205,7 +103,7 @@ GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/c++/5.1.1/cfloat \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/5.1.1/cfloat \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h \
  /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.hpp \
  /usr/include/glm/detail/func_packing.inl \
@@ -214,7 +112,8 @@ GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
  /usr/include/glm/gtc/vec1.inl /usr/include/glm/gtc/type_precision.inl \
  /usr/include/glm/gtc/packing.inl /usr/include/c++/5.1.1/cstring \
  /usr/include/string.h /usr/include/glm/gtc/random.hpp \
- /usr/include/glm/gtc/random.inl /usr/include/c++/5.1.1/ctime \
+ /usr/include/glm/gtc/random.inl /usr/include/c++/5.1.1/cstdlib \
+ /usr/include/c++/5.1.1/ctime /usr/include/bits/timex.h \
  /usr/include/glm/gtc/reciprocal.hpp /usr/include/glm/gtc/reciprocal.inl \
  /usr/include/glm/gtc/round.hpp /usr/include/glm/gtc/round.inl \
  /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/type_ptr.inl \
@@ -286,7 +185,63 @@ GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
  /usr/include/glm/gtx/rotate_vector.inl /usr/include/glm/gtx/spline.hpp \
  /usr/include/glm/gtx/spline.inl /usr/include/glm/gtx/std_based_type.hpp \
  /usr/include/glm/gtx/std_based_type.inl \
- /usr/include/glm/gtx/string_cast.hpp \
+ /usr/include/glm/gtx/string_cast.hpp /usr/include/c++/5.1.1/string \
+ /usr/include/c++/5.1.1/bits/stringfwd.h \
+ /usr/include/c++/5.1.1/bits/memoryfwd.h \
+ /usr/include/c++/5.1.1/bits/char_traits.h \
+ /usr/include/c++/5.1.1/bits/stl_algobase.h \
+ /usr/include/c++/5.1.1/bits/functexcept.h \
+ /usr/include/c++/5.1.1/bits/exception_defines.h \
+ /usr/include/c++/5.1.1/ext/numeric_traits.h \
+ /usr/include/c++/5.1.1/bits/stl_pair.h \
+ /usr/include/c++/5.1.1/bits/move.h \
+ /usr/include/c++/5.1.1/bits/concept_check.h \
+ /usr/include/c++/5.1.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/5.1.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/5.1.1/debug/debug.h \
+ /usr/include/c++/5.1.1/bits/stl_iterator.h \
+ /usr/include/c++/5.1.1/bits/ptr_traits.h \
+ /usr/include/c++/5.1.1/bits/predefined_ops.h \
+ /usr/include/c++/5.1.1/bits/postypes.h /usr/include/c++/5.1.1/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdarg.h \
+ /usr/include/c++/5.1.1/bits/allocator.h \
+ /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++allocator.h \
+ /usr/include/c++/5.1.1/ext/new_allocator.h /usr/include/c++/5.1.1/new \
+ /usr/include/c++/5.1.1/exception \
+ /usr/include/c++/5.1.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/5.1.1/bits/exception_ptr.h \
+ /usr/include/c++/5.1.1/bits/nested_exception.h \
+ /usr/include/c++/5.1.1/bits/localefwd.h \
+ /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++locale.h \
+ /usr/include/c++/5.1.1/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/5.1.1/iosfwd \
+ /usr/include/c++/5.1.1/cctype /usr/include/ctype.h \
+ /usr/include/c++/5.1.1/bits/ostream_insert.h \
+ /usr/include/c++/5.1.1/bits/cxxabi_forced.h \
+ /usr/include/c++/5.1.1/bits/stl_function.h \
+ /usr/include/c++/5.1.1/backward/binders.h \
+ /usr/include/c++/5.1.1/bits/range_access.h \
+ /usr/include/c++/5.1.1/initializer_list \
+ /usr/include/c++/5.1.1/bits/basic_string.h \
+ /usr/include/c++/5.1.1/ext/atomicity.h \
+ /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr.h \
+ /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/setjmp.h \
+ /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/atomic_word.h \
+ /usr/include/c++/5.1.1/ext/alloc_traits.h \
+ /usr/include/c++/5.1.1/bits/alloc_traits.h \
+ /usr/include/c++/5.1.1/ext/string_conversions.h \
+ /usr/include/c++/5.1.1/cstdio /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/c++/5.1.1/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/5.1.1/bits/functional_hash.h \
+ /usr/include/c++/5.1.1/bits/hash_bytes.h \
+ /usr/include/c++/5.1.1/bits/basic_string.tcc \
  /usr/include/glm/gtx/string_cast.inl /usr/include/c++/5.1.1/cstdarg \
  /usr/include/glm/gtx/transform2.hpp /usr/include/glm/gtx/transform2.inl \
  /usr/include/glm/gtx/type_aligned.hpp \
@@ -304,349 +259,9 @@ GameAssetManager.o: GameAssetManager.cc /usr/include/stdc-predef.h \
  /usr/include/glm/gtx/simd_vec4.inl /usr/include/glm/gtx/simd_mat4.hpp \
  /usr/include/glm/detail/intrinsic_matrix.hpp \
  /usr/include/glm/detail/intrinsic_matrix.inl \
- /usr/include/glm/gtx/simd_mat4.inl
+ /usr/include/glm/gtx/simd_mat4.inl common.h
 
 /usr/include/stdc-predef.h:
-
-GameAssetManager.h:
-
-/usr/include/c++/5.1.1/memory:
-
-/usr/include/c++/5.1.1/bits/stl_algobase.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/os_defines.h:
-
-/usr/include/features.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/c++/5.1.1/bits/functexcept.h:
-
-/usr/include/c++/5.1.1/bits/exception_defines.h:
-
-/usr/include/c++/5.1.1/bits/cpp_type_traits.h:
-
-/usr/include/c++/5.1.1/ext/type_traits.h:
-
-/usr/include/c++/5.1.1/ext/numeric_traits.h:
-
-/usr/include/c++/5.1.1/bits/stl_pair.h:
-
-/usr/include/c++/5.1.1/bits/move.h:
-
-/usr/include/c++/5.1.1/bits/concept_check.h:
-
-/usr/include/c++/5.1.1/type_traits:
-
-/usr/include/c++/5.1.1/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/5.1.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/5.1.1/debug/debug.h:
-
-/usr/include/c++/5.1.1/bits/stl_iterator.h:
-
-/usr/include/c++/5.1.1/bits/ptr_traits.h:
-
-/usr/include/c++/5.1.1/bits/predefined_ops.h:
-
-/usr/include/c++/5.1.1/bits/allocator.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++allocator.h:
-
-/usr/include/c++/5.1.1/ext/new_allocator.h:
-
-/usr/include/c++/5.1.1/new:
-
-/usr/include/c++/5.1.1/exception:
-
-/usr/include/c++/5.1.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/5.1.1/bits/exception_ptr.h:
-
-/usr/include/c++/5.1.1/bits/nested_exception.h:
-
-/usr/include/c++/5.1.1/bits/memoryfwd.h:
-
-/usr/include/c++/5.1.1/bits/stl_construct.h:
-
-/usr/include/c++/5.1.1/ext/alloc_traits.h:
-
-/usr/include/c++/5.1.1/bits/alloc_traits.h:
-
-/usr/include/c++/5.1.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/5.1.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/5.1.1/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/5.1.1/typeinfo:
-
-/usr/include/c++/5.1.1/bits/hash_bytes.h:
-
-/usr/include/c++/5.1.1/iosfwd:
-
-/usr/include/c++/5.1.1/bits/stringfwd.h:
-
-/usr/include/c++/5.1.1/bits/postypes.h:
-
-/usr/include/c++/5.1.1/cwchar:
-
-/usr/include/wchar.h:
-
-/usr/include/stdio.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdarg.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stddef.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/c++/5.1.1/ext/atomicity.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr-default.h:
-
-/usr/include/pthread.h:
-
-/usr/include/endian.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/byteswap-16.h:
-
-/usr/include/sched.h:
-
-/usr/include/time.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/atomic_word.h:
-
-/usr/include/c++/5.1.1/ext/concurrence.h:
-
-/usr/include/c++/5.1.1/bits/stl_function.h:
-
-/usr/include/c++/5.1.1/backward/binders.h:
-
-/usr/include/c++/5.1.1/bits/uses_allocator.h:
-
-/usr/include/c++/5.1.1/functional:
-
-/usr/include/c++/5.1.1/tuple:
-
-/usr/include/c++/5.1.1/utility:
-
-/usr/include/c++/5.1.1/bits/stl_relops.h:
-
-/usr/include/c++/5.1.1/initializer_list:
-
-/usr/include/c++/5.1.1/array:
-
-/usr/include/c++/5.1.1/stdexcept:
-
-/usr/include/c++/5.1.1/string:
-
-/usr/include/c++/5.1.1/bits/char_traits.h:
-
-/usr/include/c++/5.1.1/cstdint:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdint.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/5.1.1/bits/localefwd.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++locale.h:
-
-/usr/include/c++/5.1.1/clocale:
-
-/usr/include/locale.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/5.1.1/cctype:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/5.1.1/bits/ostream_insert.h:
-
-/usr/include/c++/5.1.1/bits/cxxabi_forced.h:
-
-/usr/include/c++/5.1.1/bits/range_access.h:
-
-/usr/include/c++/5.1.1/bits/basic_string.h:
-
-/usr/include/c++/5.1.1/ext/string_conversions.h:
-
-/usr/include/c++/5.1.1/cstdlib:
-
-/usr/include/stdlib.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/bits/sigset.h:
-
-/usr/include/sys/sysmacros.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdlib-bsearch.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/c++/5.1.1/cstdio:
-
-/usr/include/libio.h:
-
-/usr/include/_G_config.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/sys_errlist.h:
-
-/usr/include/bits/stdio.h:
-
-/usr/include/c++/5.1.1/cerrno:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/5.1.1/bits/functional_hash.h:
-
-/usr/include/c++/5.1.1/bits/basic_string.tcc:
-
-/usr/include/c++/5.1.1/bits/unique_ptr.h:
-
-/usr/include/c++/5.1.1/bits/shared_ptr.h:
-
-/usr/include/c++/5.1.1/bits/shared_ptr_base.h:
-
-/usr/include/c++/5.1.1/bits/allocated_ptr.h:
-
-/usr/include/c++/5.1.1/ext/aligned_buffer.h:
-
-/usr/include/c++/5.1.1/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/5.1.1/bits/atomic_base.h:
-
-/usr/include/c++/5.1.1/backward/auto_ptr.h:
-
-/usr/include/c++/5.1.1/vector:
-
-/usr/include/c++/5.1.1/bits/stl_vector.h:
-
-/usr/include/c++/5.1.1/bits/stl_bvector.h:
-
-/usr/include/c++/5.1.1/bits/vector.tcc:
-
-/usr/include/c++/5.1.1/fstream:
-
-/usr/include/c++/5.1.1/istream:
-
-/usr/include/c++/5.1.1/ios:
-
-/usr/include/c++/5.1.1/bits/ios_base.h:
-
-/usr/include/c++/5.1.1/bits/locale_classes.h:
-
-/usr/include/c++/5.1.1/bits/locale_classes.tcc:
-
-/usr/include/c++/5.1.1/system_error:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/error_constants.h:
-
-/usr/include/c++/5.1.1/streambuf:
-
-/usr/include/c++/5.1.1/bits/streambuf.tcc:
-
-/usr/include/c++/5.1.1/bits/basic_ios.h:
-
-/usr/include/c++/5.1.1/bits/locale_facets.h:
-
-/usr/include/c++/5.1.1/cwctype:
-
-/usr/include/wctype.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/ctype_base.h:
-
-/usr/include/c++/5.1.1/bits/streambuf_iterator.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/ctype_inline.h:
-
-/usr/include/c++/5.1.1/bits/locale_facets.tcc:
-
-/usr/include/c++/5.1.1/bits/basic_ios.tcc:
-
-/usr/include/c++/5.1.1/ostream:
-
-/usr/include/c++/5.1.1/bits/ostream.tcc:
-
-/usr/include/c++/5.1.1/bits/istream.tcc:
-
-/usr/include/c++/5.1.1/bits/codecvt.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/basic_file.h:
-
-/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++io.h:
-
-/usr/include/c++/5.1.1/bits/fstream.tcc:
-
-/usr/include/c++/5.1.1/iostream:
-
-/usr/include/GL/gl.h:
-
-/usr/include/GL/glext.h:
-
-/usr/include/inttypes.h:
-
-common.h:
-
-GameAsset.h:
 
 Camera.h:
 
@@ -660,7 +275,25 @@ Camera.h:
 
 /usr/include/assert.h:
 
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
 /usr/include/c++/5.1.1/cstddef:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stddef.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/emmintrin.h:
 
@@ -670,9 +303,61 @@ Camera.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mm_malloc.h:
 
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
 /usr/include/glm/detail/precision.hpp:
 
 /usr/include/glm/detail/type_int.hpp:
+
+/usr/include/c++/5.1.1/type_traits:
+
+/usr/include/c++/5.1.1/cstdint:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
 
 /usr/include/glm/detail/_vectorize.hpp:
 
@@ -739,6 +424,10 @@ Camera.h:
 /usr/include/glm/detail/func_trigonometric.inl:
 
 /usr/include/c++/5.1.1/cmath:
+
+/usr/include/c++/5.1.1/bits/cpp_type_traits.h:
+
+/usr/include/c++/5.1.1/ext/type_traits.h:
 
 /usr/include/math.h:
 
@@ -890,6 +579,8 @@ Camera.h:
 
 /usr/include/bits/xopen_lim.h:
 
+/usr/include/bits/stdio_lim.h:
+
 /usr/include/c++/5.1.1/cfloat:
 
 /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h:
@@ -920,7 +611,11 @@ Camera.h:
 
 /usr/include/glm/gtc/random.inl:
 
+/usr/include/c++/5.1.1/cstdlib:
+
 /usr/include/c++/5.1.1/ctime:
+
+/usr/include/bits/timex.h:
 
 /usr/include/glm/gtc/reciprocal.hpp:
 
@@ -1104,6 +799,148 @@ Camera.h:
 
 /usr/include/glm/gtx/string_cast.hpp:
 
+/usr/include/c++/5.1.1/string:
+
+/usr/include/c++/5.1.1/bits/stringfwd.h:
+
+/usr/include/c++/5.1.1/bits/memoryfwd.h:
+
+/usr/include/c++/5.1.1/bits/char_traits.h:
+
+/usr/include/c++/5.1.1/bits/stl_algobase.h:
+
+/usr/include/c++/5.1.1/bits/functexcept.h:
+
+/usr/include/c++/5.1.1/bits/exception_defines.h:
+
+/usr/include/c++/5.1.1/ext/numeric_traits.h:
+
+/usr/include/c++/5.1.1/bits/stl_pair.h:
+
+/usr/include/c++/5.1.1/bits/move.h:
+
+/usr/include/c++/5.1.1/bits/concept_check.h:
+
+/usr/include/c++/5.1.1/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/5.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/5.1.1/debug/debug.h:
+
+/usr/include/c++/5.1.1/bits/stl_iterator.h:
+
+/usr/include/c++/5.1.1/bits/ptr_traits.h:
+
+/usr/include/c++/5.1.1/bits/predefined_ops.h:
+
+/usr/include/c++/5.1.1/bits/postypes.h:
+
+/usr/include/c++/5.1.1/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/stdarg.h:
+
+/usr/include/c++/5.1.1/bits/allocator.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++allocator.h:
+
+/usr/include/c++/5.1.1/ext/new_allocator.h:
+
+/usr/include/c++/5.1.1/new:
+
+/usr/include/c++/5.1.1/exception:
+
+/usr/include/c++/5.1.1/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/5.1.1/bits/exception_ptr.h:
+
+/usr/include/c++/5.1.1/bits/nested_exception.h:
+
+/usr/include/c++/5.1.1/bits/localefwd.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/c++/5.1.1/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/5.1.1/iosfwd:
+
+/usr/include/c++/5.1.1/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/5.1.1/bits/ostream_insert.h:
+
+/usr/include/c++/5.1.1/bits/cxxabi_forced.h:
+
+/usr/include/c++/5.1.1/bits/stl_function.h:
+
+/usr/include/c++/5.1.1/backward/binders.h:
+
+/usr/include/c++/5.1.1/bits/range_access.h:
+
+/usr/include/c++/5.1.1/initializer_list:
+
+/usr/include/c++/5.1.1/bits/basic_string.h:
+
+/usr/include/c++/5.1.1/ext/atomicity.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/5.1.1/x86_64-redhat-linux/bits/atomic_word.h:
+
+/usr/include/c++/5.1.1/ext/alloc_traits.h:
+
+/usr/include/c++/5.1.1/bits/alloc_traits.h:
+
+/usr/include/c++/5.1.1/ext/string_conversions.h:
+
+/usr/include/c++/5.1.1/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/5.1.1/cerrno:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/5.1.1/bits/functional_hash.h:
+
+/usr/include/c++/5.1.1/bits/hash_bytes.h:
+
+/usr/include/c++/5.1.1/bits/basic_string.tcc:
+
 /usr/include/glm/gtx/string_cast.inl:
 
 /usr/include/c++/5.1.1/cstdarg:
@@ -1149,3 +986,5 @@ Camera.h:
 /usr/include/glm/detail/intrinsic_matrix.inl:
 
 /usr/include/glm/gtx/simd_mat4.inl:
+
+common.h:

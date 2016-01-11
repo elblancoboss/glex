@@ -21,7 +21,17 @@ GameAssetManager::GameAssetManager(ApplicationMode mode) {
   };
 
   program_token = CreateGLProgram(vertex_shader, fragment_shader);
+translateMatrix_link = glGetUniformLocation(program_token, "translateMatrix");
+viewMatrix_link = glGetUniformLocation(program_token, "viewMatrix");
+
 }
+
+void GameAssetManager::UpdateCameraPosition(Input input_Direction,  int mouseX, int mouseY){
+
+
+ viewMatrix = camera.UpdateCameraPosition(input_Direction, mouseX, mouseY);
+
+  }
 
 /**
  * Deletes a GameAssetManager, in particular it will clean up any modifications
@@ -29,30 +39,6 @@ GameAssetManager::GameAssetManager(ApplicationMode mode) {
  */
 GameAssetManager::~GameAssetManager() {
   glDeleteProgram(program_token);
-}
-
-/**
- * Unimplemented copy constructor -- this means that the GameAssetManager
- * may not work as you'd expect when being copied.
- */
-GameAssetManager::GameAssetManager(GameAssetManager const& the_manager) {
-  // TODO: implement this
-}
-
-/**
- * Unimplemented move constructor -- this unimplemented method violates the
- * C++11 move semantics for GameAssetManager.
- */
-GameAssetManager::GameAssetManager(GameAssetManager const&& the_manager) {
-  // TODO: implement this
-}
-
-/**
- * Unimplemented assisgnment operator -- violates the expected semantics for
- * assignment in C++11.
- */
-void GameAssetManager::operator=(GameAssetManager const& the_manager) {
-  // TODO: implement this
 }
 
 /**
@@ -67,6 +53,8 @@ void GameAssetManager::AddAsset(std::shared_ptr<GameAsset> the_asset) {
  */
 void GameAssetManager::Draw() {
   for(auto ga: draw_list) {
+    glUniformMatrix4fv(viewMatrix_link, 1, GL_FALSE, &viewMatrix[0][0]);
+    glUniformMatrix4fv(translateMatrix_link, 1, GL_FALSE, &translateMatrix[0][0]);
     ga->Draw(program_token);
   }
 }

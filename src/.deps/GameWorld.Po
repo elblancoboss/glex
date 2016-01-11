@@ -121,38 +121,61 @@ GameWorld.o: GameWorld.cc /usr/include/stdc-predef.h GameWorld.h \
  /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/5.1.1/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/5.1.1/bits/fstream.tcc /usr/include/c++/5.1.1/iostream \
- GameAsset.h CubeAsset.h /usr/include/glm/glm.hpp \
- /usr/include/glm/detail/_fixes.hpp /usr/include/c++/5.1.1/cmath \
- /usr/include/math.h /usr/include/bits/huge_val.h \
- /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
- /usr/include/bits/inf.h /usr/include/bits/nan.h \
- /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/mathinline.h /usr/include/c++/5.1.1/climits \
- /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/limits.h \
- /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/c++/5.1.1/cfloat \
- /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h \
- /usr/include/c++/5.1.1/limits /usr/include/c++/5.1.1/cassert \
- /usr/include/assert.h /usr/include/glm/fwd.hpp \
- /usr/include/glm/detail/type_int.hpp /usr/include/glm/detail/setup.hpp \
+ GameAsset.h Camera.h /usr/include/glm/ext.hpp \
+ /usr/include/glm/gtc/bitfield.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/5.1.1/cassert /usr/include/assert.h \
  /usr/include/c++/5.1.1/cstddef \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/emmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mm_malloc.h \
+ /usr/include/glm/detail/precision.hpp \
+ /usr/include/glm/detail/type_int.hpp \
+ /usr/include/glm/detail/_vectorize.hpp \
+ /usr/include/glm/detail/type_vec1.hpp /usr/include/glm/fwd.hpp \
  /usr/include/glm/detail/type_float.hpp \
  /usr/include/glm/detail/type_vec.hpp \
- /usr/include/glm/detail/precision.hpp \
- /usr/include/glm/detail/type_mat.hpp /usr/include/glm/vec2.hpp \
+ /usr/include/glm/detail/type_mat.hpp \
+ /usr/include/glm/detail/type_vec1.inl \
  /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl /usr/include/glm/vec3.hpp \
+ /usr/include/glm/detail/type_vec2.inl \
  /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl /usr/include/glm/vec4.hpp \
+ /usr/include/glm/detail/type_vec3.inl \
  /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/type_vec4.inl /usr/include/glm/mat2x2.hpp \
+ /usr/include/glm/detail/type_vec4.inl /usr/include/c++/5.1.1/limits \
+ /usr/include/glm/gtc/bitfield.inl /usr/include/glm/gtc/constants.hpp \
+ /usr/include/glm/gtc/constants.inl /usr/include/glm/gtc/epsilon.hpp \
+ /usr/include/glm/gtc/epsilon.inl /usr/include/glm/gtc/quaternion.hpp \
+ /usr/include/glm/mat3x3.hpp /usr/include/glm/detail/type_mat3x3.hpp \
+ /usr/include/glm/detail/type_mat3x3.inl /usr/include/glm/mat4x4.hpp \
+ /usr/include/glm/detail/type_mat4x4.hpp \
+ /usr/include/glm/detail/type_mat4x4.inl /usr/include/glm/vec3.hpp \
+ /usr/include/glm/vec4.hpp /usr/include/glm/gtc/quaternion.inl \
+ /usr/include/glm/trigonometric.hpp \
+ /usr/include/glm/detail/func_trigonometric.hpp \
+ /usr/include/glm/detail/func_trigonometric.inl \
+ /usr/include/c++/5.1.1/cmath /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/glm/geometric.hpp \
+ /usr/include/glm/detail/func_geometric.hpp \
+ /usr/include/glm/detail/func_geometric.inl \
+ /usr/include/glm/detail/func_exponential.hpp \
+ /usr/include/glm/detail/func_exponential.inl \
+ /usr/include/glm/detail/func_vector_relational.hpp \
+ /usr/include/glm/detail/func_vector_relational.inl \
+ /usr/include/glm/detail/func_common.hpp \
+ /usr/include/glm/detail/_fixes.hpp \
+ /usr/include/glm/detail/func_common.inl /usr/include/glm/exponential.hpp \
+ /usr/include/glm/vector_relational.hpp /usr/include/glm/common.hpp \
+ /usr/include/glm/vec2.hpp /usr/include/glm/gtc/integer.hpp \
+ /usr/include/glm/detail/func_integer.hpp \
+ /usr/include/glm/detail/func_integer.inl \
+ /usr/include/glm/gtc/integer.inl /usr/include/glm/gtc/matrix_access.hpp \
+ /usr/include/glm/gtc/matrix_access.inl \
+ /usr/include/glm/gtc/matrix_integer.hpp /usr/include/glm/mat2x2.hpp \
  /usr/include/glm/detail/type_mat2x2.hpp \
  /usr/include/glm/detail/type_mat2x2.inl /usr/include/glm/mat2x3.hpp \
  /usr/include/glm/detail/type_mat2x3.hpp \
@@ -160,64 +183,43 @@ GameWorld.o: GameWorld.cc /usr/include/stdc-predef.h GameWorld.h \
  /usr/include/glm/detail/type_mat2x4.hpp \
  /usr/include/glm/detail/type_mat2x4.inl /usr/include/glm/mat3x2.hpp \
  /usr/include/glm/detail/type_mat3x2.hpp \
- /usr/include/glm/detail/type_mat3x2.inl /usr/include/glm/mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.inl /usr/include/glm/mat3x4.hpp \
+ /usr/include/glm/detail/type_mat3x2.inl /usr/include/glm/mat3x4.hpp \
  /usr/include/glm/detail/type_mat3x4.hpp \
  /usr/include/glm/detail/type_mat3x4.inl /usr/include/glm/mat4x2.hpp \
  /usr/include/glm/detail/type_mat4x2.hpp \
  /usr/include/glm/detail/type_mat4x2.inl /usr/include/glm/mat4x3.hpp \
  /usr/include/glm/detail/type_mat4x3.hpp \
- /usr/include/glm/detail/type_mat4x3.inl /usr/include/glm/mat4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.inl \
- /usr/include/glm/trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.inl \
- /usr/include/glm/detail/_vectorize.hpp \
- /usr/include/glm/detail/type_vec1.hpp \
- /usr/include/glm/detail/type_vec1.inl /usr/include/glm/exponential.hpp \
- /usr/include/glm/detail/func_exponential.hpp \
- /usr/include/glm/detail/func_exponential.inl \
- /usr/include/glm/detail/func_vector_relational.hpp \
- /usr/include/glm/detail/func_vector_relational.inl \
- /usr/include/glm/common.hpp /usr/include/glm/detail/func_common.hpp \
- /usr/include/glm/detail/_fixes.hpp \
- /usr/include/glm/detail/func_common.inl /usr/include/glm/packing.hpp \
- /usr/include/glm/detail/func_packing.hpp \
- /usr/include/glm/detail/func_packing.inl \
- /usr/include/glm/detail/type_half.hpp \
- /usr/include/glm/detail/type_half.inl /usr/include/glm/geometric.hpp \
- /usr/include/glm/detail/func_geometric.hpp \
- /usr/include/glm/detail/func_geometric.inl /usr/include/glm/matrix.hpp \
+ /usr/include/glm/detail/type_mat4x3.inl \
+ /usr/include/glm/gtc/matrix_inverse.hpp /usr/include/glm/matrix.hpp \
  /usr/include/glm/detail/func_matrix.hpp \
  /usr/include/glm/detail/func_matrix.inl \
- /usr/include/glm/vector_relational.hpp /usr/include/glm/integer.hpp \
- /usr/include/glm/detail/func_integer.hpp \
- /usr/include/glm/detail/func_integer.inl /usr/include/glm/ext.hpp \
- /usr/include/glm/gtc/bitfield.hpp /usr/include/glm/gtc/bitfield.inl \
- /usr/include/glm/gtc/constants.hpp /usr/include/glm/gtc/constants.inl \
- /usr/include/glm/gtc/epsilon.hpp /usr/include/glm/gtc/epsilon.inl \
- /usr/include/glm/gtc/quaternion.hpp /usr/include/glm/gtc/quaternion.inl \
- /usr/include/glm/gtc/integer.hpp /usr/include/glm/gtc/integer.inl \
- /usr/include/glm/gtc/matrix_access.hpp \
- /usr/include/glm/gtc/matrix_access.inl \
- /usr/include/glm/gtc/matrix_integer.hpp \
- /usr/include/glm/gtc/matrix_inverse.hpp \
  /usr/include/glm/gtc/matrix_inverse.inl \
  /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/gtc/matrix_transform.inl /usr/include/glm/gtc/noise.hpp \
  /usr/include/glm/detail/_noise.hpp /usr/include/glm/gtc/noise.inl \
  /usr/include/glm/gtc/packing.hpp /usr/include/glm/gtc/type_precision.hpp \
- /usr/include/glm/gtc/vec1.hpp /usr/include/glm/gtc/vec1.inl \
- /usr/include/glm/gtc/type_precision.inl /usr/include/glm/gtc/packing.inl \
- /usr/include/c++/5.1.1/cstring /usr/include/string.h \
- /usr/include/glm/gtc/random.hpp /usr/include/glm/gtc/random.inl \
- /usr/include/c++/5.1.1/ctime /usr/include/glm/gtc/reciprocal.hpp \
- /usr/include/glm/gtc/reciprocal.inl /usr/include/glm/gtc/round.hpp \
- /usr/include/glm/gtc/round.inl /usr/include/glm/gtc/type_ptr.hpp \
- /usr/include/glm/gtc/type_ptr.inl /usr/include/glm/gtc/ulp.hpp \
- /usr/include/glm/gtc/ulp.inl /usr/include/glm/gtx/associated_min_max.hpp \
+ /usr/include/glm/gtc/vec1.hpp /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/c++/5.1.1/climits \
+ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/c++/5.1.1/cfloat \
+ /usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h \
+ /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.hpp \
+ /usr/include/glm/detail/func_packing.inl \
+ /usr/include/glm/detail/type_half.hpp \
+ /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
+ /usr/include/glm/gtc/vec1.inl /usr/include/glm/gtc/type_precision.inl \
+ /usr/include/glm/gtc/packing.inl /usr/include/c++/5.1.1/cstring \
+ /usr/include/string.h /usr/include/glm/gtc/random.hpp \
+ /usr/include/glm/gtc/random.inl /usr/include/c++/5.1.1/ctime \
+ /usr/include/glm/gtc/reciprocal.hpp /usr/include/glm/gtc/reciprocal.inl \
+ /usr/include/glm/gtc/round.hpp /usr/include/glm/gtc/round.inl \
+ /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/type_ptr.inl \
+ /usr/include/glm/gtc/ulp.hpp /usr/include/glm/gtc/ulp.inl \
+ /usr/include/glm/gtx/associated_min_max.hpp \
  /usr/include/glm/gtx/associated_min_max.inl /usr/include/glm/gtx/bit.hpp \
  /usr/include/glm/gtx/bit.inl /usr/include/glm/gtx/closest_point.hpp \
  /usr/include/glm/gtx/closest_point.inl \
@@ -302,7 +304,7 @@ GameWorld.o: GameWorld.cc /usr/include/stdc-predef.h GameWorld.h \
  /usr/include/glm/gtx/simd_vec4.inl /usr/include/glm/gtx/simd_mat4.hpp \
  /usr/include/glm/detail/intrinsic_matrix.hpp \
  /usr/include/glm/detail/intrinsic_matrix.inl \
- /usr/include/glm/gtx/simd_mat4.inl
+ /usr/include/glm/gtx/simd_mat4.inl CubeAsset.h
 
 /usr/include/stdc-predef.h:
 
@@ -648,11 +650,95 @@ GameAssetManager.h:
 
 GameAsset.h:
 
-CubeAsset.h:
+Camera.h:
 
-/usr/include/glm/glm.hpp:
+/usr/include/glm/ext.hpp:
 
-/usr/include/glm/detail/_fixes.hpp:
+/usr/include/glm/gtc/bitfield.hpp:
+
+/usr/include/glm/detail/setup.hpp:
+
+/usr/include/c++/5.1.1/cassert:
+
+/usr/include/assert.h:
+
+/usr/include/c++/5.1.1/cstddef:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mm_malloc.h:
+
+/usr/include/glm/detail/precision.hpp:
+
+/usr/include/glm/detail/type_int.hpp:
+
+/usr/include/glm/detail/_vectorize.hpp:
+
+/usr/include/glm/detail/type_vec1.hpp:
+
+/usr/include/glm/fwd.hpp:
+
+/usr/include/glm/detail/type_float.hpp:
+
+/usr/include/glm/detail/type_vec.hpp:
+
+/usr/include/glm/detail/type_mat.hpp:
+
+/usr/include/glm/detail/type_vec1.inl:
+
+/usr/include/glm/detail/type_vec2.hpp:
+
+/usr/include/glm/detail/type_vec2.inl:
+
+/usr/include/glm/detail/type_vec3.hpp:
+
+/usr/include/glm/detail/type_vec3.inl:
+
+/usr/include/glm/detail/type_vec4.hpp:
+
+/usr/include/glm/detail/type_vec4.inl:
+
+/usr/include/c++/5.1.1/limits:
+
+/usr/include/glm/gtc/bitfield.inl:
+
+/usr/include/glm/gtc/constants.hpp:
+
+/usr/include/glm/gtc/constants.inl:
+
+/usr/include/glm/gtc/epsilon.hpp:
+
+/usr/include/glm/gtc/epsilon.inl:
+
+/usr/include/glm/gtc/quaternion.hpp:
+
+/usr/include/glm/mat3x3.hpp:
+
+/usr/include/glm/detail/type_mat3x3.hpp:
+
+/usr/include/glm/detail/type_mat3x3.inl:
+
+/usr/include/glm/mat4x4.hpp:
+
+/usr/include/glm/detail/type_mat4x4.hpp:
+
+/usr/include/glm/detail/type_mat4x4.inl:
+
+/usr/include/glm/vec3.hpp:
+
+/usr/include/glm/vec4.hpp:
+
+/usr/include/glm/gtc/quaternion.inl:
+
+/usr/include/glm/trigonometric.hpp:
+
+/usr/include/glm/detail/func_trigonometric.hpp:
+
+/usr/include/glm/detail/func_trigonometric.inl:
 
 /usr/include/c++/5.1.1/cmath:
 
@@ -674,75 +760,47 @@ CubeAsset.h:
 
 /usr/include/bits/mathinline.h:
 
-/usr/include/c++/5.1.1/climits:
+/usr/include/glm/geometric.hpp:
 
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/limits.h:
+/usr/include/glm/detail/func_geometric.hpp:
 
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/syslimits.h:
+/usr/include/glm/detail/func_geometric.inl:
 
-/usr/include/limits.h:
+/usr/include/glm/detail/func_exponential.hpp:
 
-/usr/include/bits/posix1_lim.h:
+/usr/include/glm/detail/func_exponential.inl:
 
-/usr/include/bits/local_lim.h:
+/usr/include/glm/detail/func_vector_relational.hpp:
 
-/usr/include/linux/limits.h:
+/usr/include/glm/detail/func_vector_relational.inl:
 
-/usr/include/bits/posix2_lim.h:
+/usr/include/glm/detail/func_common.hpp:
 
-/usr/include/bits/xopen_lim.h:
+/usr/include/glm/detail/_fixes.hpp:
 
-/usr/include/c++/5.1.1/cfloat:
+/usr/include/glm/detail/func_common.inl:
 
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h:
+/usr/include/glm/exponential.hpp:
 
-/usr/include/c++/5.1.1/limits:
+/usr/include/glm/vector_relational.hpp:
 
-/usr/include/c++/5.1.1/cassert:
-
-/usr/include/assert.h:
-
-/usr/include/glm/fwd.hpp:
-
-/usr/include/glm/detail/type_int.hpp:
-
-/usr/include/glm/detail/setup.hpp:
-
-/usr/include/c++/5.1.1/cstddef:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/emmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/mm_malloc.h:
-
-/usr/include/glm/detail/type_float.hpp:
-
-/usr/include/glm/detail/type_vec.hpp:
-
-/usr/include/glm/detail/precision.hpp:
-
-/usr/include/glm/detail/type_mat.hpp:
+/usr/include/glm/common.hpp:
 
 /usr/include/glm/vec2.hpp:
 
-/usr/include/glm/detail/type_vec2.hpp:
+/usr/include/glm/gtc/integer.hpp:
 
-/usr/include/glm/detail/type_vec2.inl:
+/usr/include/glm/detail/func_integer.hpp:
 
-/usr/include/glm/vec3.hpp:
+/usr/include/glm/detail/func_integer.inl:
 
-/usr/include/glm/detail/type_vec3.hpp:
+/usr/include/glm/gtc/integer.inl:
 
-/usr/include/glm/detail/type_vec3.inl:
+/usr/include/glm/gtc/matrix_access.hpp:
 
-/usr/include/glm/vec4.hpp:
+/usr/include/glm/gtc/matrix_access.inl:
 
-/usr/include/glm/detail/type_vec4.hpp:
-
-/usr/include/glm/detail/type_vec4.inl:
+/usr/include/glm/gtc/matrix_integer.hpp:
 
 /usr/include/glm/mat2x2.hpp:
 
@@ -768,12 +826,6 @@ CubeAsset.h:
 
 /usr/include/glm/detail/type_mat3x2.inl:
 
-/usr/include/glm/mat3x3.hpp:
-
-/usr/include/glm/detail/type_mat3x3.hpp:
-
-/usr/include/glm/detail/type_mat3x3.inl:
-
 /usr/include/glm/mat3x4.hpp:
 
 /usr/include/glm/detail/type_mat3x4.hpp:
@@ -792,101 +844,13 @@ CubeAsset.h:
 
 /usr/include/glm/detail/type_mat4x3.inl:
 
-/usr/include/glm/mat4x4.hpp:
-
-/usr/include/glm/detail/type_mat4x4.hpp:
-
-/usr/include/glm/detail/type_mat4x4.inl:
-
-/usr/include/glm/trigonometric.hpp:
-
-/usr/include/glm/detail/func_trigonometric.hpp:
-
-/usr/include/glm/detail/func_trigonometric.inl:
-
-/usr/include/glm/detail/_vectorize.hpp:
-
-/usr/include/glm/detail/type_vec1.hpp:
-
-/usr/include/glm/detail/type_vec1.inl:
-
-/usr/include/glm/exponential.hpp:
-
-/usr/include/glm/detail/func_exponential.hpp:
-
-/usr/include/glm/detail/func_exponential.inl:
-
-/usr/include/glm/detail/func_vector_relational.hpp:
-
-/usr/include/glm/detail/func_vector_relational.inl:
-
-/usr/include/glm/common.hpp:
-
-/usr/include/glm/detail/func_common.hpp:
-
-/usr/include/glm/detail/_fixes.hpp:
-
-/usr/include/glm/detail/func_common.inl:
-
-/usr/include/glm/packing.hpp:
-
-/usr/include/glm/detail/func_packing.hpp:
-
-/usr/include/glm/detail/func_packing.inl:
-
-/usr/include/glm/detail/type_half.hpp:
-
-/usr/include/glm/detail/type_half.inl:
-
-/usr/include/glm/geometric.hpp:
-
-/usr/include/glm/detail/func_geometric.hpp:
-
-/usr/include/glm/detail/func_geometric.inl:
+/usr/include/glm/gtc/matrix_inverse.hpp:
 
 /usr/include/glm/matrix.hpp:
 
 /usr/include/glm/detail/func_matrix.hpp:
 
 /usr/include/glm/detail/func_matrix.inl:
-
-/usr/include/glm/vector_relational.hpp:
-
-/usr/include/glm/integer.hpp:
-
-/usr/include/glm/detail/func_integer.hpp:
-
-/usr/include/glm/detail/func_integer.inl:
-
-/usr/include/glm/ext.hpp:
-
-/usr/include/glm/gtc/bitfield.hpp:
-
-/usr/include/glm/gtc/bitfield.inl:
-
-/usr/include/glm/gtc/constants.hpp:
-
-/usr/include/glm/gtc/constants.inl:
-
-/usr/include/glm/gtc/epsilon.hpp:
-
-/usr/include/glm/gtc/epsilon.inl:
-
-/usr/include/glm/gtc/quaternion.hpp:
-
-/usr/include/glm/gtc/quaternion.inl:
-
-/usr/include/glm/gtc/integer.hpp:
-
-/usr/include/glm/gtc/integer.inl:
-
-/usr/include/glm/gtc/matrix_access.hpp:
-
-/usr/include/glm/gtc/matrix_access.inl:
-
-/usr/include/glm/gtc/matrix_integer.hpp:
-
-/usr/include/glm/gtc/matrix_inverse.hpp:
 
 /usr/include/glm/gtc/matrix_inverse.inl:
 
@@ -905,6 +869,44 @@ CubeAsset.h:
 /usr/include/glm/gtc/type_precision.hpp:
 
 /usr/include/glm/gtc/vec1.hpp:
+
+/usr/include/glm/glm.hpp:
+
+/usr/include/glm/detail/_fixes.hpp:
+
+/usr/include/c++/5.1.1/climits:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/c++/5.1.1/cfloat:
+
+/usr/lib/gcc/x86_64-redhat-linux/5.1.1/include/float.h:
+
+/usr/include/glm/packing.hpp:
+
+/usr/include/glm/detail/func_packing.hpp:
+
+/usr/include/glm/detail/func_packing.inl:
+
+/usr/include/glm/detail/type_half.hpp:
+
+/usr/include/glm/detail/type_half.inl:
+
+/usr/include/glm/integer.hpp:
 
 /usr/include/glm/gtc/vec1.inl:
 
@@ -1149,3 +1151,5 @@ CubeAsset.h:
 /usr/include/glm/detail/intrinsic_matrix.inl:
 
 /usr/include/glm/gtx/simd_mat4.inl:
+
+CubeAsset.h:
