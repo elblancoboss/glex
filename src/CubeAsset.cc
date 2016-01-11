@@ -3,39 +3,34 @@
 CubeAsset::CubeAsset(GLfloat positionX,GLfloat positionY,GLfloat positionZ ) {
   // model coordinates, origin at centre.
   GLfloat vertex_buffer_data [] {
-  -0.5f + positionX,0.5f  + positionY,0.5f   + positionZ,   //0 ftl    
-  -0.5f + positionX,-0.5f + positionY,0.5f   + positionZ, //1 fbl
-   0.5f + positionX,-0.5f + positionY,0.5f   + positionZ, //2 fbr
-   0.5f + positionX,0.5f  + positionY,0.5f   + positionZ,   //3 ftr
-        -0.5f + positionX,0.5f  + positionY,-0.5f  + positionZ, //4 btl
-        -0.5f + positionX,-0.5f + positionY,-0.5f  + positionZ, //5 bbl
-   0.5f + positionX,-0.5f + positionY,-0.5f  + positionZ, //6 bbr
-   0.5f + positionX,0.5f  + positionY,-0.5f  + positionZ  //7 btr
+-0.5f + positionX, -0.5f + positionY, -0.5f + positionZ,
+    -0.5f + positionX,  0.5f + positionY, -0.5f + positionZ,
+     0.5f + positionX, -0.5f + positionY, -0.5f + positionZ,
+     0.5f + positionX,  0.5f + positionY, -0.5f + positionZ,
+     0.5f + positionX, -0.5f + positionY,  0.5f + positionZ,
+     0.5f + positionX,  0.5f + positionY,  0.5f + positionZ,
+    -0.5f + positionX, -0.5f + positionY,  0.5f + positionZ,
+    -0.5f + positionX,  0.5f + positionY,  0.5f + positionZ
   };
 
-  element_buffer_length = 36;
   GLuint element_buffer []  {
   
  //cube
-  0,1,2, //Front
-  0,3,2,
-
-  3,2,6, //Right side
-  3,7,6,
-
-  0,1,5, //Left side
-  0,4,5,
-
-  4,5,7, //Back
-  4,7,6,
-
-  0,3,4, //Top
-  4,3,7,
-
-  1,2,5, //Bottom
-  2,6,5
+    0, 1, 2,
+    1, 3, 2,
+    2, 3, 4,
+    3, 5, 4,
+    0, 2, 4,
+    6, 0, 4,
+    6, 7, 0,
+    1, 0, 7,
+    1, 7, 3,
+    7, 5, 3,
+    5, 6, 4,
+    5, 7, 6
   
   };
+  element_buffer_length = sizeof(element_buffer);
 
   // Transfer buffers to the GPU
   //
@@ -45,7 +40,7 @@ CubeAsset::CubeAsset(GLfloat positionX,GLfloat positionY,GLfloat positionZ ) {
 
   // immediately bind the buffer and transfer the data
   glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_token);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * 24, vertex_buffer_data, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);
 
   glGenBuffers(1, &element_buffer_token);
   glBindBuffer(GL_ARRAY_BUFFER, element_buffer_token);
