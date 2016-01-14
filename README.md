@@ -1,3 +1,6 @@
+# Travis CI #
+https://travis-ci.org/elblancoboss/glex
+
 # Prerequisites #
 
 * GNU Autotools
