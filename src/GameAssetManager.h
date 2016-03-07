@@ -43,12 +43,13 @@ class GameAssetManager {
   Camera camera;
 // variables to communicate with the shader(Camera)
 
-
+  GLuint projectionMatrix_link;
   GLuint translateMatrix_link;
   GLuint viewMatrix_link;
 
   glm::mat4 translateMatrix; 
   glm::mat4 viewMatrix; 
+  glm::mat4 projectionMatrix;
 
    GLuint cameraPositionX;
 
