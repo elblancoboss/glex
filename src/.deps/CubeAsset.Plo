@@ -283,7 +283,21 @@ CubeAsset.lo: CubeAsset.cc /usr/include/stdc-predef.h CubeAsset.h \
  /usr/include/c++/5.3.1/bits/locale_facets.tcc \
  /usr/include/c++/5.3.1/bits/basic_ios.tcc \
  /usr/include/c++/5.3.1/bits/ostream.tcc /usr/include/c++/5.3.1/istream \
- /usr/include/c++/5.3.1/bits/istream.tcc
+ /usr/include/c++/5.3.1/bits/istream.tcc /usr/include/c++/5.3.1/memory \
+ /usr/include/c++/5.3.1/bits/stl_tempbuf.h \
+ /usr/include/c++/5.3.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/5.3.1/typeinfo /usr/include/c++/5.3.1/ext/concurrence.h \
+ /usr/include/c++/5.3.1/bits/uses_allocator.h \
+ /usr/include/c++/5.3.1/functional /usr/include/c++/5.3.1/tuple \
+ /usr/include/c++/5.3.1/utility /usr/include/c++/5.3.1/bits/stl_relops.h \
+ /usr/include/c++/5.3.1/array /usr/include/c++/5.3.1/bits/unique_ptr.h \
+ /usr/include/c++/5.3.1/bits/shared_ptr.h \
+ /usr/include/c++/5.3.1/bits/shared_ptr_base.h \
+ /usr/include/c++/5.3.1/bits/allocated_ptr.h \
+ /usr/include/c++/5.3.1/ext/aligned_buffer.h \
+ /usr/include/c++/5.3.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/5.3.1/bits/atomic_base.h \
+ /usr/include/c++/5.3.1/backward/auto_ptr.h BoundingBox.h
 
 /usr/include/stdc-predef.h:
 
@@ -1076,3 +1090,43 @@ GameAsset.h:
 /usr/include/c++/5.3.1/istream:
 
 /usr/include/c++/5.3.1/bits/istream.tcc:
+
+/usr/include/c++/5.3.1/memory:
+
+/usr/include/c++/5.3.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/5.3.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/5.3.1/typeinfo:
+
+/usr/include/c++/5.3.1/ext/concurrence.h:
+
+/usr/include/c++/5.3.1/bits/uses_allocator.h:
+
+/usr/include/c++/5.3.1/functional:
+
+/usr/include/c++/5.3.1/tuple:
+
+/usr/include/c++/5.3.1/utility:
+
+/usr/include/c++/5.3.1/bits/stl_relops.h:
+
+/usr/include/c++/5.3.1/array:
+
+/usr/include/c++/5.3.1/bits/unique_ptr.h:
+
+/usr/include/c++/5.3.1/bits/shared_ptr.h:
+
+/usr/include/c++/5.3.1/bits/shared_ptr_base.h:
+
+/usr/include/c++/5.3.1/bits/allocated_ptr.h:
+
+/usr/include/c++/5.3.1/ext/aligned_buffer.h:
+
+/usr/include/c++/5.3.1/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/5.3.1/bits/atomic_base.h:
+
+/usr/include/c++/5.3.1/backward/auto_ptr.h:
+
+BoundingBox.h:

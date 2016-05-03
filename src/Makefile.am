@@ -1,11 +1,11 @@
-EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h Camera.h
+EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h Camera.h BoundingBox.h 
 
 bin_PROGRAMS = shaderexample
 shaderexample_SOURCES = main.cc
 shaderexample_LDADD = libhamster.la
 
 lib_LTLIBRARIES = libhamster.la
-libhamster_la_SOURCES = GameWorld.cc GameAssetManager.cc CubeAsset.cc Camera.cc
+libhamster_la_SOURCES = GameWorld.cc GameAssetManager.cc CubeAsset.cc Camera.cc BoundingBox.cc GameAsset.cc
 libhamster_la_LDFLAGS = -version-inf 0:1
 
 AM_CPPFLAGS = -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES
